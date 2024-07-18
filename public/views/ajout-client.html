@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Client</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container d-flex">
+    <div class=" col-2 shadow-sm bg-nav mt-5 border border-1">
+      <div class="logo">
+        <img class="container col-12 mt-3 mb-2" src="../image/image6.png" alt="">
+      </div>
+      <p class="fw-light fs-6 mt-3 mb-3">-MENU</p>
+      <ul class="list-group border border-0 text-center  ">
+        <li class="list-group-item bg-nav border border-0 ">
+          <a href="" class="list-group-item list-group-item-action d-flex align-item-center text-white bg-primary">
+            <span class="material-symbols-outlined mx-2 ">Dashboard</span>
+          </a>
+        </li>
+        <li class="list-group-item bg-nav border border-0 text-center ">
+          <a href="../views/index.html" class="list-group-item list-group-item-action d-flex align-item-center ">
+            <span class="material-symbols-outlined ">Suivie Dette</span>
+          </a>
+        </li>
+        <li class="list-group-item bg-nav border border-0 text-center mb-5  ">
+          <a href="../views/listes-clients.html"
+            class="list-group-item list-group-item-action d-flex align-item-center">
+            <span class="material-symbols-outlined ">Listes Clients</span>
+          </a>
+        </li>
+        <li class="list-group-item bg-nav border border-0 text-center ">
+          <a href="../views/ajout-client.html" class="list-group-item list-group-item-action d-flex align-item-center ">
+            <span class="material-symbols-outlined ">Ajout Client</span>
+          </a>
+        </li>
+        <li class="list-group-item bg-nav border border-0 text-center ">
+          <a href=""
+            class="list-group-item list-group-item-action d-flex align-item-center bg-danger border border-0 text-white">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span class="material-symbols-outlined ">Deconnexion</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container mt-5">
+        <h1 class="text-center">Formulaire Client</h1>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputPrenom" class="form-label">Prénom</label>
+            <input type="text" class="form-control" id="inputPrenom">
+          </div>
+          <div class="col-md-6">
+            <label for="inputNom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="inputNom">
+          </div>
+          <div class="col-12">
+            <label for="inputAdresse" class="form-label">Adresse</label>
+            <input type="text" class="form-control" id="inputAdresse" placeholder="1234 Main St">
+          </div>
+          <div class="col-12">
+            <label for="inputTelephone" class="form-label">Téléphone</label>
+            <input type="number" class="form-control" id="inputTelephone" placeholder="Numéro de téléphone">
+          </div>
+          <div class="col-md-6">
+            <label for="inputFonction" class="form-label">Fonction</label>
+            <input type="text" class="form-control" id="inputFonction">
+          </div>
+          <div class="col-md-4">
+            <label for="inputSexe" class="form-label">Sexe</label>
+            <select id="inputSexe" class="form-select">
+              <option selected></option>
+              <option>Masculin</option>
+              <option>Féminin</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputPhoto" class="form-label">Photo</label>
+            <input type="text" class="form-control" id="inputPhoto">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Valider</button>
+          </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
